@@ -1,0 +1,24 @@
+# Motivation
+I was reading through Ruby Performance optimization and needed access to Valgrind.
+Valgrind was unavailable on Catalina and I wanted to try an alternative to the local VM route.
+
+The following is adapted from https://makandracards.com/makandra/28149-installing-rbenv-on-ubuntu
+We need make and a C compiler, in addition to the requirements in the link above.
+```
+sudo apt-get update
+# need make & a compiler
+sudo apt install gcc make autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev
+# optional
+sudo apt install valgrind
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+rbenv install 2.7.0
+rbenv global 2.7.0
+# also optional
+wget http://media.pragprog.com/titles/adrpo/code/adrpo-code.tgz
+tar xf adrpo-code.tgz
+```
+
