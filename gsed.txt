@@ -1,0 +1,2 @@
+ git grep -l LazyClassContainer | xargs gsed -i 's|LazyClassContainer|LazyModuleContainer|g'
+
