@@ -1,0 +1,7 @@
+enable colemak in ubuntu / virtualbox:
+
+setxkbmap us -variant colemak
+
+revert
+
+setxkbmap us -variant
