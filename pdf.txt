@@ -1,0 +1,4 @@
+# add a password to a pdf file:
+
+pdftk in.pdf output out.pdf userpw pass
+
