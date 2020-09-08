@@ -1,0 +1,4 @@
+# Avoid circular references in macos
+
+ncdu --exclude /System/Volumes/Data
+
