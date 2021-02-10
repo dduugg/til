@@ -1,0 +1,5 @@
+Fix C-SPC on macOS:
+
+System Preferences > Keyboard > Shortcuts > Input Sources > Select the previous input source and uncheck
+
+source: https://emacs.stackexchange.com/questions/21285/set-mark-command-c-spc-not-recognised-broken
