@@ -1,2 +1,6 @@
  git grep -l LazyClassContainer | xargs gsed -i 's|LazyClassContainer|LazyModuleContainer|g'
 
+# when using capture groups:
+
+ g grep -l '{.* =~ .*}' | grep \.rb | grep -v vendor | xargs gsed -i -E 's|\{(.*) =~ (.*)\}|{\1.match?(\2)}|g'
+ 
